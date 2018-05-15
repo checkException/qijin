@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE digester-rules PUBLIC
+        "-//Apache Commons //DTD digester-rules XML V1.0//EN"
+        "http://commons.apache.org/digester/dtds/digester-rules-3.2.dtd">
+
+<digester-rules>
+    <pattern value="PlayInfo">
+        <object-create-rule classname="com.chs.portal.sitv.bean.PlayInfo"/>
+        <bean-property-setter-rule pattern="offerid"/>
+        <bean-property-setter-rule pattern="fee"/>
+        <bean-property-setter-rule pattern="checknum"/>
+        <bean-property-setter-rule pattern="targetType"/>
+        <bean-property-setter-rule pattern="serviceType"/>
+    </pattern>
+
+</digester-rules>

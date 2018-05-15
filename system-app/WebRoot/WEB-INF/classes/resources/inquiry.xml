@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE digester-rules PUBLIC
+        "-//Apache Commons //DTD digester-rules XML V1.0//EN"
+        "http://commons.apache.org/digester/dtds/digester-rules-3.0.dtd">
+
+<digester-rules>
+    <pattern value="response">
+        <object-create-rule classname="com.chs.portal.sitv.bean.InquiryResponse"/>
+        <bean-property-setter-rule pattern="errorcode"/>
+        <bean-property-setter-rule pattern="errormsg"/>
+        <bean-property-setter-rule pattern="fee"/>
+    </pattern>
+
+</digester-rules>
