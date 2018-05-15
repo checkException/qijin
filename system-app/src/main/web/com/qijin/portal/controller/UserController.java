@@ -32,7 +32,7 @@ public class UserController {
 	public String user1(String directory,String page){
 		List<AdminModel> list= adminService.searchList();
 		if(list!=null&&list.size()>0){
-			System.out.println(list.get(0).getId()+""+list.get(0).getName());
+			System.out.println(list.get(0).getId()+"--"+list.get(0).getName());
 		}
 		log.info("directory="+directory+" , page="+page);
 		return "pages/test/hello";
